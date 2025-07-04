@@ -1,9 +1,9 @@
 def dec_to_binary(dec_num: int):
     remainder = 0
     if dec_num == 0:
-        return 0
+        return "0"
     if dec_num == 1:
-        return 1
+        return "1"
     current_number = dec_num
     binary_number = []
     while current_number > 1:
