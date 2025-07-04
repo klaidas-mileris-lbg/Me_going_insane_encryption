@@ -16,9 +16,13 @@ def dec_to_binary(dec_num: int):
 print(dec_to_binary(89))
 
 def generate_random_key(length_of_key):
+    """generates a random binary key of the specified length using user-generated entropy"""
     import time
     import random
     import pyautogui
+    # Still needs a bunch of work - need to introduce more non-deterministic factors to prevent simple reverse-engineering.
+    # include some keyboard bashing perhaps? 
+    # Needs a bunch of error handling - at the moment I could get buffer overflows - raising to the power generates immense numbers, would be bad on a large display
     print("in 2 seconds, start moving your mouse for 10 seconds to generate entropy")
     time.sleep(2)
     randomness_list = []
